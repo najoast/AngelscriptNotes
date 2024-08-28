@@ -1,4 +1,4 @@
-Must be done after possession (the Controller has been set for the Pawn)
+bvMust be done after possession (the Controller has been set for the Pawn)
 
 * Player-Controlled Character
 	* ASC Lives on the Pawn
@@ -10,5 +10,6 @@ Must be done after possession (the Controller has been set for the Pawn)
 * AI-Controlled Character
 	* ASC Lives on the Pawn
 		* Server & Client: `BeginPlay`
+
 
 > [[Udemy GAS Course]], 3-23
