@@ -19,5 +19,6 @@ Available Options –
 | Only No Replay                 | Unknown                                                                                    |
 | Simulated Or Physics no Replay | Unknown                                                                                    |
 | Skip Replay                    | Unknown                                                                                    |
+
 > [1] https://unrealdirective.com/articles/blueprint-variables-what-you-need-to-know
 > [2] https://angelscript.hazelight.se/scripting/networking-features/
