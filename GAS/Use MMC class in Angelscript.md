@@ -98,7 +98,7 @@ class ANGELSCRIPTGAS_API UAngelscriptModMagnitudeCalculation : public UGameplayM
 
 public:
 	UFUNCTION(BlueprintCallable, Category = "Ability|GameplayEffect")
-	void AddToRelevantAttributesToCapture(const FGameplayEffectAttributeCaptureDefinition& CaptureDefinition);
+	void AddRelevantAttributeToCapture(const FGameplayEffectAttributeCaptureDefinition& CaptureDefinition);
 };
 ```
 
@@ -106,7 +106,7 @@ AngelscriptModMagnitudeCalculation.cpp
 ```cpp
 #include "AngelscriptModMagnitudeCalculation.h"
 
-void UAngelscriptModMagnitudeCalculation::AddToRelevantAttributesToCapture(const FGameplayEffectAttributeCaptureDefinition &CaptureDefinition)
+void UAngelscriptModMagnitudeCalculation::AddRelevantAttributeToCapture(const FGameplayEffectAttributeCaptureDefinition &CaptureDefinition)
 {
 	RelevantAttributesToCapture.Add(CaptureDefinition);
 }
@@ -127,7 +127,7 @@ class UMMC_MaxHealth : UAngelscriptModMagnitudeCalculation
 			UAuraAttributeSet::StaticClass(), n"Vigor", 
 			EGameplayEffectAttributeCaptureSource::Target, false);
 
-		this.AddToRelevantAttributesToCapture(VigorCaptureDefinition);
+		this.AddRelevantAttributeToCapture(VigorCaptureDefinition);
 	}
 
 	UFUNCTION(BlueprintOverride)
